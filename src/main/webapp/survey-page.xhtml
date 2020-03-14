@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:decorate template="/templates/page-template.xhtml">
+    <ui:param name="pageTitle" value="Survey Page"/>
+    </ui:decorate>
+    <ui:decorate template="/templates/survey-header-temp.xhtml"/>
+        <p></p>
+        <p></p>
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    
+    <h:body>
+        <table>
+            <tr>
+                <th id="q_header">TEACHING APPROACHES</th>
+            </tr>
+        </table>
+        
+        <h:form>
+            <h:panelGrid columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel value="1. The instructor stimulated my interest in the subject." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="2. The instructor managed classroom time and pace well." />
+                <h:selectOneRadio value="#{manager.answer}">                
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                    
+                <h:outputLabel class="question" value="3. The instructor was organized and prepared for every class." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="4. The instructor encouraged discussions and responded to questions." />
+                <h:selectOneRadio value="#{manager.answer}">       
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                
+                <h:outputLabel class="question" value="5. The instructor demonstrated in-depth knowledge of the subject." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                                
+                <h:outputLabel class="question" value="6. The instructor appeared enthusiastic and interested." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                                                
+                <h:outputLabel class="question" value="7. The instructor used a variety of instructional methods to reach the course objectives (e.g. group discussions, student presentations, etc.)" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                                                                
+                <h:outputLabel class="question" value="8. The instructor challenged students to do their best work." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="9. The instructor was accessible outside of class" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                                                                
+                <h:outputLabel class="question" value="10. Did the instructor actively attempt to prevent cheating in this course?" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>            
+            </h:panelGrid>
+            
+            <h4>Teaching Approaches Comments</h4>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+        
+        <br />
+        <br />
+        
+        <table>
+            <tr>
+                <th id="q_header">FEEDBACK AND ASSESSMENT</th>
+            </tr>
+        </table>       
+
+            <h:panelGrid columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="11. Information about the assessment was communicated clearly" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="12. Feedback was provided within the stated timeframe." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                
+                <h:outputLabel class="question" value="13. Feedback showed how to improve my work (e .g. corrections including comments)." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+            
+            <h4>Feedback and Assessments Comments</h4>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+
+        <br />
+        <br />
+        
+        <table>
+            <tr>
+                <th id="q_header">RESOURCES AND ADMINISTRATION</th>
+            </tr>
+        </table>      
+        
+            <h:panelGrid columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="14. The course was supported by adequate library resources." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="15. Blackboard resources for the course were useful." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                
+                <h:outputLabel class="question" value="16. Instructor gave guidance on where to find resources." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+            
+            <h4>Resources and Administration Comments</h4>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+    
+        <br />
+        <br />
+        
+        <table>
+            <tr>
+                <th id="q_header">ADDITIONAL QUESTIONS</th>
+            </tr>
+        </table>
+              
+            <h:panelGrid columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="17. The syllabus was explained at the beginning of the course." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="18. The course was delivered as outlined in the syllabus." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="19. Instructor explained the grading criteria of the course." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                                
+                <h:outputLabel class="question" value="20. Exams related to the course learning outcomes" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="21. Projects and assignments related to the course learning outcomes" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+            
+            <h4>Additional Questions Comments</h4>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+       
+        <br />
+        <br />
+        
+        <table>
+            <tr>
+                <th id="q_header">OVERALL EXPERIENCE</th>
+            </tr>
+        </table>
+         
+            <h:panelGrid  columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="22. This was a worthwhile class" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Yes" itemValue = "Yes"/>
+                    <f:selectItem itemLabel = "No" itemValue = "No"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="23. Would you recommend this course to a fellow student?" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Yes" itemValue = "Yes"/>
+                    <f:selectItem itemLabel = "No" itemValue = "No"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+        
+            <h:panelGrid  columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="24. Overall, how do you rate your experience in this course?" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Excellent" itemValue = "Excellent"/>
+                    <f:selectItem itemLabel = "Very Good" itemValue = "Very Good"/>
+                    <f:selectItem itemLabel = "Good" itemValue = "Good"/>
+                    <f:selectItem itemLabel = "Fair" itemValue = "Fair"/>
+                    <f:selectItem itemLabel = "Poor" itemValue = "Poor"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+             
+        
+            <h:panelGrid  columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="25. How many hours did you spend per week on preparation/homework for this course?" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "0-4h" itemValue = "0-4h"/>
+                    <f:selectItem itemLabel = "5-8h" itemValue = "5-8h"/>
+                    <f:selectItem itemLabel = "9-12h" itemValue = "9-12h"/>
+                    <f:selectItem itemLabel = "9-12h" itemValue = "12-16h"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+   
+             <br />
+             
+            <h4>Overall Experience Comments</h4>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+         
+            <br />
+            <br />
+       
+        <table>
+            <tr>
+                <th id="q_header">STUDENT SELF EVALUATION</th>
+            </tr>
+        </table>
+        
+            <h:panelGrid columns="2" columnClasses="question, content" style="margin-bottom:10px" cellpadding="5">
+                <h:outputLabel class="question" value="26. I contributed constructively during in-class activities." />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+                
+                <h:outputLabel class="question" value="27. I feel I am achieving the learning outcomes" />
+                <h:selectOneRadio value="#{manager.answer}">
+                    <f:selectItem itemLabel = "Strongly Agree" itemValue = "Strongly Agree"/>
+                    <f:selectItem itemLabel = "Agree" itemValue = "Agree"/>
+                    <f:selectItem itemLabel = "Neutral" itemValue = "Neutral"/>
+                    <f:selectItem itemLabel = "Disagree" itemValue = "Disagree"/>
+                    <f:selectItem itemLabel = "Strongly Disagree" itemValue = "Strongly Disagree"/>
+                </h:selectOneRadio>
+            </h:panelGrid>
+        
+            <br />
+            
+            <h4>Student Self Evaluation Comments</h4>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+            <br />
+            <br />
+        <table>
+            <tr>
+                <th id="q_header">COMMENTS ON STRENGTHS AND WAYS OF IMPROVEMENT</th>
+            </tr>
+        </table>
+            
+            <p> What changes would you recommend to improve this course?</p>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+            
+            <p> What did you like best about your instructors teaching?</p>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+            
+            <p> What did you like least about your instructor’s teaching?</p>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+            
+            <p> Any further, constructive commentary?</p>
+            <h:inputTextarea styleClass="comment" cols="75" rows="5" value="#{manager.answer}"/>
+            
+            <div style="text-align: center" >
+                <br />
+                <h:commandButton value ="Submit Survey" action="survey-results.xhtml" />
+            </div>
+        </h:form>
+
+            <br />
+            <h4>THANK YOU FOR YOUR TIME AND VALUABLE FEEDBACK :)</h4>
+    </h:body>
+</html>

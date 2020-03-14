@@ -1,0 +1,70 @@
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h1, h4{
+    text-align: center;
+}
+
+#head_table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.t_heading {
+    text-align: left;
+    font-weight: bold;
+    width: 20%;
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.head_td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 0px;   
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.question {
+    width: 60%;
+    text-align: left;
+}
+
+th {
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+
+textArea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+p {
+    text-align: center;
+}
+
+
+
+
+
