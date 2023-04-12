@@ -1,5 +1,5 @@
 /******************************************************************************\
-* Programmer: Naomi Wiggins
+* Programmer: Namratha
 *
 * Course: CSCI 4391.05
 *
